@@ -1,5 +1,6 @@
 package com.jscloud.login.controller;
 
+import com.jscloud.LogConfig.ActionLog;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/faq")
 public class LoginController {
 
+
     @GetMapping("/login/{id}")
-    public  String login(@PathVariable int id){
+    @ActionLog(value = "【用户登录login】拦截", desc = "用户登录", type = "login")
+    public String login(@PathVariable int id) {
         return "hello" + id;
     }
 }
