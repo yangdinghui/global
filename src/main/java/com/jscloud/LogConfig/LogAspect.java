@@ -39,7 +39,7 @@ public class LogAspect {
         Method method = signature.getMethod();
         // 通过反射可获得注解上的属性，然后做日志记录相关的操作
         ActionLog actionLog = method.getAnnotation(ActionLog.class);
-        System.out.println("around注解式拦截--->>：" + actionLog.value());
+        System.out.println("around注解式拦截--->>：" + actionLog.value() + "，方法名：--->"+method.getName());
     }
 
     // 通过@Before注解声明一个建言，此建言直接[使用拦截规则]作为参数
