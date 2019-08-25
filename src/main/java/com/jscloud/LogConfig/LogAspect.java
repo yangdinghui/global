@@ -6,6 +6,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 
 /**
  * description 描述这个类的主要功能、用途
@@ -38,8 +39,6 @@ public class LogAspect {
         Method method = signature.getMethod();
         // 通过反射可获得注解上的属性，然后做日志记录相关的操作
         ActionLog actionLog = method.getAnnotation(ActionLog.class);
-        int parameterCount = method.getParameterCount();
-        System.out.println("参数数量："+parameterCount);
         System.out.println("around注解式拦截--->>：" + actionLog.value());
     }
 

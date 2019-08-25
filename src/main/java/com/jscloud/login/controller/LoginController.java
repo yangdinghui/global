@@ -1,6 +1,7 @@
 package com.jscloud.login.controller;
 
 import com.jscloud.LogConfig.ActionLog;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class LoginController {
     @GetMapping("/login/{id}")
     @ActionLog(value = "【用户登录login】拦截", desc = "用户登录", type = "login")
     public String login(@PathVariable int id) {
+        System.out.println("Test info-------->>>");
         return "hello" + id;
     }
 }
