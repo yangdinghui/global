@@ -1,6 +1,7 @@
 package com.jscloud.mybatisTest.service;
 
 import com.jscloud.mybatisTest.model.dto.TbItemDto;
+import com.jscloud.mybatisTest.model.vo.TbItemSaveVo;
 import com.jscloud.mybatisTest.model.vo.TbItemVo;
 
 /**
@@ -12,4 +13,6 @@ import com.jscloud.mybatisTest.model.vo.TbItemVo;
 public interface TbItemService {
 
     TbItemDto detail(TbItemVo vo);
+
+    boolean save(TbItemSaveVo vo);
 }
