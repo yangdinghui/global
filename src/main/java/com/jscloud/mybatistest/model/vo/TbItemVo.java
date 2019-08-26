@@ -1,4 +1,4 @@
-package com.jscloud.mybatisTest.model.vo;
+package com.jscloud.mybatistest.model.vo;
 
 import lombok.Data;
 

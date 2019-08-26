@@ -1,4 +1,4 @@
-package com.jscloud.mybatisTest.model.entity;
+package com.jscloud.mybatistest.model.entity;
 
 import java.util.Date;
 import javax.persistence.*;

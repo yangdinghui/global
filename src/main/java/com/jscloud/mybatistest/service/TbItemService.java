@@ -1,8 +1,8 @@
-package com.jscloud.mybatisTest.service;
+package com.jscloud.mybatistest.service;
 
-import com.jscloud.mybatisTest.model.dto.TbItemDto;
-import com.jscloud.mybatisTest.model.vo.TbItemSaveVo;
-import com.jscloud.mybatisTest.model.vo.TbItemVo;
+import com.jscloud.mybatistest.model.dto.TbItemDto;
+import com.jscloud.mybatistest.model.vo.TbItemSaveVo;
+import com.jscloud.mybatistest.model.vo.TbItemVo;
 
 /**
  * description 描述这个类的主要功能、用途

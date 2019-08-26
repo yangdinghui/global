@@ -1,10 +1,10 @@
-package com.jscloud.mybatisTest.controller;
+package com.jscloud.mybatistest.controller;
 
 import com.jscloud.LogConfig.ActionLog;
-import com.jscloud.mybatisTest.model.dto.TbItemDto;
-import com.jscloud.mybatisTest.model.vo.TbItemSaveVo;
-import com.jscloud.mybatisTest.model.vo.TbItemVo;
-import com.jscloud.mybatisTest.service.TbItemService;
+import com.jscloud.mybatistest.model.dto.TbItemDto;
+import com.jscloud.mybatistest.model.vo.TbItemSaveVo;
+import com.jscloud.mybatistest.model.vo.TbItemVo;
+import com.jscloud.mybatistest.service.TbItemService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

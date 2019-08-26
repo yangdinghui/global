@@ -1,9 +1,7 @@
-package com.jscloud.mybatisTest.model.dto;
+package com.jscloud.mybatistest.model.vo;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
 import java.util.Date;
 
 /**
@@ -13,8 +11,7 @@ import java.util.Date;
  * @author 杨丁辉
  */
 @Data
-public class TbItemDto {
-
+public class TbItemSaveVo {
     private Long id;
 
     private String title;

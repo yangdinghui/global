@@ -1,11 +1,11 @@
-package com.jscloud.mybatisTest.service.impl;
+package com.jscloud.mybatistest.service.impl;
 
-import com.jscloud.mybatisTest.dao.TbItemDao;
-import com.jscloud.mybatisTest.model.dto.TbItemDto;
-import com.jscloud.mybatisTest.model.entity.TbItem;
-import com.jscloud.mybatisTest.model.vo.TbItemSaveVo;
-import com.jscloud.mybatisTest.model.vo.TbItemVo;
-import com.jscloud.mybatisTest.service.TbItemService;
+import com.jscloud.mybatistest.dao.TbItemDao;
+import com.jscloud.mybatistest.model.dto.TbItemDto;
+import com.jscloud.mybatistest.model.entity.TbItem;
+import com.jscloud.mybatistest.model.vo.TbItemSaveVo;
+import com.jscloud.mybatistest.model.vo.TbItemVo;
+import com.jscloud.mybatistest.service.TbItemService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

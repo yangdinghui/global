@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jscloud.mybatisTest.dao.TbItemDao">
-    <select id="detail" resultType="com.jscloud.mybatisTest.model.dto.TbItemDto"
-                                 parameterType="com.jscloud.mybatisTest.model.vo.TbItemVo">
+<mapper namespace="com.jscloud.mybatistest.dao.TbItemDao">
+    <select id="detail" resultType="com.jscloud.mybatistest.model.dto.TbItemDto"
+                                 parameterType="com.jscloud.mybatistest.model.vo.TbItemVo">
         SELECT A.id
             ,A.title
             ,A.sell_point

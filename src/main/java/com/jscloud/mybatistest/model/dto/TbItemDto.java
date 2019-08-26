@@ -1,4 +1,4 @@
-package com.jscloud.mybatisTest.model.vo;
+package com.jscloud.mybatistest.model.dto;
 
 import lombok.Data;
 
@@ -11,7 +11,8 @@ import java.util.Date;
  * @author 杨丁辉
  */
 @Data
-public class TbItemSaveVo {
+public class TbItemDto {
+
     private Long id;
 
     private String title;
