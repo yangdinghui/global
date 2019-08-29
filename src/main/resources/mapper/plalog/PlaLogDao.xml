@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jscloud.plalog.dao.PlaLogDao">
+    <select id="list" parameterType="com.jscloud.plalog.model.vo.PlaLogListVo"
+                                resultType="com.jscloud.plalog.model.dto.PlaLogListDto">
+        SELECT
+            A.logCode
+            ,DATE_FORMAT(A.logTime,'%Y-%m-%d %h-%i-%s') AS 'logTime'
+            ,A.funcName
+            ,A.userCode
+            ,A.logType
+            ,IFNULL(A.logDescription,'') AS 'logDescription'
+            ,IFNULL(A.logParma,'') AS 'logParma'
+            ,IFNULL(A.userName,'') AS 'userName'
+        FROM
+        pla_log AS A
+    </select>
+</mapper>

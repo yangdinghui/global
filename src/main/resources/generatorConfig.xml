@@ -27,14 +27,14 @@
         </javaTypeResolver>
 
         <!-- 配置自动生成mode生成位置以及其他参数 -->
-        <javaModelGenerator targetPackage="com.jscloud.mybatisTest" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.jscloud.modules.plamessage.plalog.model.entity" targetProject="src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
             <!--<property name="trimStrings" value="true"/>-->
         </javaModelGenerator>
 
-        <table tableName="tb_item">
+        <table tableName="pla_log">
             <property name="useActualColumnNames" value="true"/>
         </table>
     </context>

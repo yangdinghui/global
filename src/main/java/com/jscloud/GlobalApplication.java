@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import tk.mybatis.spring.annotation.MapperScan;
 
-@ComponentScan("com.jscloud")
+//@ComponentScan({"com.jscloud"})
 @MapperScan(basePackages = {"com.jscloud.*.dao"})
 @EnableAspectJAutoProxy
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.jscloud"})
 public class GlobalApplication {
 
 	public static void main(String[] args) {
