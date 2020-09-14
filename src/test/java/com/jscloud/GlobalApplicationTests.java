@@ -147,6 +147,6 @@ public class GlobalApplicationTests {
         String min = Collections.min(list);
 
         List<Object> list_1 = Collections.synchronizedList(new ArrayList<>());
-        Map<Object, Object> map = Collections.synchronizedMap(new HashMap<>());
+        Collections.synchronizedMap(new HashMap<>());
     }
 }
